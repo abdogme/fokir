@@ -1,0 +1,40 @@
+.hero-area {
+	position: relative;
+	height: 100vh;
+	background-image: url("../img/slider/slider-02.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(30, 20, 15, 0.6);
+}
+
+.hero-content {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	color: var(--color-white);
+}
+
+.hero-content h3 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.hero-content h1 {
+	font-size: 64px;
+	color: var(--color-accent);
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+.hero-content h4 {
+	font-size: 22px;
+	font-weight: 400;
+}

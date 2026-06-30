@@ -1,0 +1,32 @@
+.funfacts-area {
+	padding: 70px 0;
+}
+
+.funfacts-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.fact-card {
+	flex: 1 1 200px;
+	padding: 20px;
+}
+
+.fact-card i {
+	font-size: 36px;
+	color: var(--color-accent);
+	margin-bottom: 15px;
+}
+
+.fact-card h3 {
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.fact-card h5 {
+	font-weight: 400;
+	color: var(--color-grey-text);
+	font-size: 14px;
+}

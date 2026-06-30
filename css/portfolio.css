@@ -1,0 +1,62 @@
+.portfolio-area {
+	padding: 100px 0;
+}
+
+.portfolio-menu {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.portfolio-menu button {
+	padding: 8px 22px;
+	border: 1px solid #ddd;
+	background: transparent;
+	border-radius: 4px;
+	font-size: 13px;
+	text-transform: uppercase;
+	cursor: default;
+	color: var(--color-grey-text);
+}
+
+.portfolio-menu button.active {
+	background: var(--color-accent);
+	border-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+.portfolio-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.portfolio-item {
+	position: relative;
+	flex: 1 1 calc(33.333% - 25px);
+	min-width: 280px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.portfolio-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 48, 91, 0.85);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+	opacity: 1;
+}
+
+.portfolio-overlay i {
+	color: var(--color-white);
+	font-size: 28px;
+}
